@@ -1,4 +1,4 @@
-name: Atualizar VPS
+name: Deploy na VPS
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Atualizar código na VPS
+      - name: Fazer deploy na VPS
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.VPS_HOST }}
@@ -19,4 +19,5 @@ jobs:
           script: |
             cd ~/projetos/curso-docker-essencial-card-business-fork-junior-angelo
             git pull
-            echo "Código atualizado na VPS!"
+            chmod +x deploy.sh
+            ./deploy.sh
