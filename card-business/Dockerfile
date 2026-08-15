@@ -9,7 +9,7 @@ ENV LOGOMARCA="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvTNZDXLiAo
 ENV FOTO="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ZwCLYwIi50xUsISyvryXmD6Sf1rEBJLgJxbs1RwK8NsS4PMyKbvfVAY&s"
 ENV NOME="Paulo Tadeu"
 ENV IDADE="24"
-ENV EMAIL="paulotadeu123@hotmail.com"
+ENV EMAIL="paulotadeu123@gmail.com"
 ENV PROFISSAO="Analyst soc"
-ENV SITE="WWW.paulotadeu.com.br"
+ENV SITE="www.paulotadeu.com.br"
 CMD ["python3", "app.py"]
